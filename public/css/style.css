@@ -1,0 +1,125 @@
+@import url(./reset.css);
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 24;
+  vertical-align: -.6rem;
+  margin-right: .4rem;
+  
+}
+
+:root{
+    --color-primary-bg : #212121;
+    --color-primary-text : #333;
+    --color-header-bg : #fafafa;
+    --color-shadow : rgba(0, 0, 0, 0.1);
+}
+
+/* Structure de base */
+header, main, footer {
+    max-width:120rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--color-header-bg);
+    border-radius: 0.8rem;
+    box-shadow: 0 0 1rem var(--color-shadow);
+}
+header, footer{
+    background-color: inherit;
+    border: 0;
+    box-shadow: 0;
+}
+
+/* Header */
+header h1 {
+    text-align: center;
+    font-size: 5.5rem;
+    text-shadow:   -1px -1px 0 #751C1C,  
+    1px -1px 0 #751C1C,
+    -1px 1px 0 #751C1C,
+     1px 1px 0 #751C1C,
+     1px 1px 10px #141414;
+     color:#DE3535;
+
+}
+
+/* Affiche du film */
+.movie-poster img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 0.8rem;
+}
+
+/* Titres des sections */
+section h2 {
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: left;
+    text-shadow:   -1px -1px 0 #751C1C,  
+    1px -1px 0 #751C1C,
+    -1px 1px 0 #751C1C,
+     1px 1px 0 #751C1C,
+     1px 1px 10px #141414;
+     color:#DE3535;
+}
+
+/* Storyline */
+.storyline p {
+    margin-top: 1rem;
+    text-align: justify;
+    font-size: 1.6rem;
+}
+
+/* Cast */
+.cast ul {
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+.cast ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+}
+
+/* Date de sortie */
+.release-date p {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+/* Bouton bande-annonce */
+.trailer-button {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.trailer-button a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #D90000;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+.trailer-button a:hover {
+    background-color: #b50000;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+
+footer p {
+    color: #777;
+    font-size: 1.4rem;
+}
