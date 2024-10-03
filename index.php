@@ -21,25 +21,49 @@
 
         <!-- Section Storyline -->
         <section class="storyline">
-            <h2>Histoire</h2>
+            <!-- <h2>Histoire</h2>
             <p>
                 En 1981, à Gotham City, Arthur Fleck, un comédien raté, sombre dans la folie
                 après une série de tragédies et d'humiliations. Incapable de se connecter aux
                 autres et désespéré par l'absence de sens dans sa vie, Arthur se transforme
                 progressivement en Joker, une figure de chaos et de violence, qui devient 
                 une icône pour les citoyens les plus marginalisés.
-            </p>
+            </p> -->
+            <?php
+            $story = $newtitle->storyline();
+            ?>
+            <h2><?= $story ['title']?></h2>
+            <p><?= $story ['résumé']?></p>
         </section>
 
         <!-- Section Cast -->
         <section class="cast">
             <h2>Cast Principal</h2>
-            <ul>
+<!--             <ul>
                 <li><strong>Joaquin Phoenix </strong>dans le rôle d'Arthur Fleck (Joker)</li>
                 <li><strong>Robert De Niro</strong> dans le rôle de Murray Franklin</li>
                 <li><strong>Zazie Beetz</strong> dans le rôle de Sophie Dumond</li>
                 <li><strong>Frances Conroy</strong> dans le rôle de Penny Fleck</li>
-            </ul>
+            </ul> -->
+        <?php
+        /* $cast = 
+        [
+        "Joaquin Phoenix"=>"dans le rôle d'Arthur Fleck (Joker)",
+        "Robert De Niro"=>"dans le rôle de Murray Franklin",
+        "Zazie Beetz"=>" dans le rôle de Sophie Dumond",
+        "Frances"=>"dans le rôle de Penny Fleck",
+        ];
+        foreach ($cast as $key => $value)
+        print ("$key $value <br>") */
+  
+        $actors = $newtitle->actorsInfo();
+    
+        foreach ($actors as $key => $index){
+            foreach ($index as $key => $value){
+                print "$key $value <br>";
+            }
+        }
+        ?>
         </section>
 
         <!-- Section Date de Sortie -->
