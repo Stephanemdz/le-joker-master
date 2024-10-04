@@ -84,6 +84,10 @@
     <?php
     include_once __DIR__ . '/template/footer.inc.php'
     ?>
+
+    <?php
+    include_once "./model/config.php";
+    ?>
     
 </body>
 </html>
