@@ -1,6 +1,7 @@
 <?php
     include_once __DIR__ . '/controller/baseController.php';
     include_once __DIR__ . '/template/header.inc.php';
+    
 ?>
 <body>
     <!-- En-tête de la page -->
@@ -45,25 +46,26 @@
                 <li><strong>Zazie Beetz</strong> dans le rôle de Sophie Dumond</li>
                 <li><strong>Frances Conroy</strong> dans le rôle de Penny Fleck</li>
             </ul> -->
-        <?php
-        /* $cast = 
-        [
-        "Joaquin Phoenix"=>"dans le rôle d'Arthur Fleck (Joker)",
-        "Robert De Niro"=>"dans le rôle de Murray Franklin",
-        "Zazie Beetz"=>" dans le rôle de Sophie Dumond",
-        "Frances"=>"dans le rôle de Penny Fleck",
-        ];
-        foreach ($cast as $key => $value)
-        print ("$key $value <br>") */
-  
-        $actors = $newtitle->actorsInfo();
-    
-        foreach ($actors as $key => $index){
-            foreach ($index as $key => $value){
-                print "$key $value <br>";
-            }
-        }
-        ?>
+        <ul>
+            <?php
+            /* $cast =
+            [
+            "Joaquin Phoenix"=>"dans le rôle d'Arthur Fleck (Joker)",
+            "Robert De Niro"=>"dans le rôle de Murray Franklin",
+            "Zazie Beetz"=>" dans le rôle de Sophie Dumond",
+            "Frances"=>"dans le rôle de Penny Fleck",
+            ];
+            foreach ($cast as $key => $value)
+            print ("$key $value <br>") */
+            // $actors = $newtitle->actorsInfo();
+            // foreach ($actors as $key => $index){
+            //     foreach ($index as $key => $value){
+            //         print "$key $value <br>";
+            //     }
+            // }
+            include_once __DIR__ . '/model/model.php';
+            ?>
+        </ul>
         </section>
 
         <!-- Section Date de Sortie -->

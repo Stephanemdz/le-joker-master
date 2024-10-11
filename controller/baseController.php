@@ -9,34 +9,36 @@
     class User
     {
         public $title = "Le Joker";
-        //static $info = "Informations sur le film Le Joker";
-            public function actorsInfo(){
-                $actors = [
-                    array(
-                        "prenom"=>"Joaquin",
-                        "nom"=>"Phoenix",
-                        "role"=>"dans le rôle d'Arthur Fleck (Joker)"
-                    ),
-                    array(
-                        "prenom"=>"Robert",
-                        "nom"=>"De Niro",
-                        "role"=>"dans le rôle de Murray Franklin"
-                    ),
-                    array(
-                        "prenom"=>"Zazie",
-                        "nom"=>"Beetz",
-                        "role"=>"dans le rôle de Sophie Dumond"
-                    ),
-                    array(
-                        "prenom"=>"Frances",
-                        "nom"=>"Conroy",
-                        "role"=>"dans le rôle de Penny Fleck"
-                    ),
-                    
-                ];
             
-            return $actors;
-        }
+        //static $info = "Informations sur le film Le Joker";
+        //     public function actorsInfo(){
+        //         $actors = [
+        //             array(
+        //                 "prenom"=>"Joaquin",
+        //                 "nom"=>"Phoenix",
+        //                 "role"=>"dans le rôle d'Arthur Fleck (Joker)"
+        //             ),
+        //             array(
+        //                 "prenom"=>"Robert",
+        //                 "nom"=>"De Niro",
+        //                 "role"=>"dans le rôle de Murray Franklin"
+        //             ),
+        //             array(
+        //                 "prenom"=>"Zazie",
+        //                 "nom"=>"Beetz",
+        //                 "role"=>"dans le rôle de Sophie Dumond"
+        //             ),
+        //             array(
+        //                 "prenom"=>"Frances",
+        //                 "nom"=>"Conroy",
+        //                 "role"=>"dans le rôle de Penny Fleck"
+        //             ),
+                    
+        //         ];
+            
+        //     return $actors;
+        // }
+        
         # function supp
         public function storyline(){
             $story = 
